@@ -10,11 +10,18 @@
  - watchlog.sh - скрипт, который запускается сервисом watchlog.service 
  	> /opt/
 2. В папке Spawn/ - файлы cервиса запуска spawn-fcgi вместо init-скрипта 
- - spawn-fcgi.service - сам сервис > /etc/systemd/system/
- - spawn-fcgi - файл конфигурации > /etc/sysconfig/
+ - spawn-fcgi.service - сам сервис 
+ 	> /etc/systemd/system/
+ - spawn-fcgi - файл конфигурации 
+ 	> /etc/sysconfig/
 3. В папке Apache/ - файлы сервиса запуска нескольких инстансов Apache
- - httpd.service - основной сервис с переменной > /etc/systemd/system/
- - httpd-first - файл конфигурации для сервиса первого экземпляра > /etc/sysconfig/
- - httpd-second - файл конфигурации для сервиса второго экземпляра > /etc/sysconfig/
- - first.conf - файл конфигурации на который ссылается файл конфигурации первого экземпляра сервиса > /etc/httpd/conf
- - second.conf - файл конфигурации на который ссылается файл конфигурации второго экземпляра сервиса > /etc/httpd/conf
+ - httpd.service - основной сервис с переменной 
+ 	> /etc/systemd/system/
+ - httpd-first - файл конфигурации для сервиса первого экземпляра 
+ 	> /etc/sysconfig/
+ - httpd-second - файл конфигурации для сервиса второго экземпляра 
+ 	> /etc/sysconfig/
+ - first.conf - файл конфигурации на который ссылается файл конфигурации первого экземпляра сервиса 
+ 	> /etc/httpd/conf
+ - second.conf - файл конфигурации на который ссылается файл конфигурации второго экземпляра сервиса 
+ 	> /etc/httpd/conf
