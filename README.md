@@ -1,10 +1,14 @@
 ## OTUS-Linux-2023-04-L9 / Systemd
 ### Ниже описания файлов для каждой подзадачи, в цитатах указан путь где должен находится файл в системе
 1. В папке LogService/ - файлы сервиса для поиска логов. 
- - watchlog.service - сам сервис > /etc/systemd/system/
- - watchlog.timer - сервис-таймер, дёргает основной сервис каждые 15 сек > /etc/systemd/system
- - watchlog - файл конфигурации для сервиса > /etc/sysconfig/ 
- - watchlog.sh - скрипт, который запускается сервисом watchlog.service > /opt/
+ - watchlog.service - сам сервис 
+ > /etc/systemd/system/
+ - watchlog.timer - сервис-таймер, дёргает основной сервис каждые 15 сек 
+ > /etc/systemd/system
+ - watchlog - файл конфигурации для сервиса 
+ > /etc/sysconfig/ 
+ - watchlog.sh - скрипт, который запускается сервисом watchlog.service 
+ > /opt/
 2. В папке Spawn/ - cервис запуска spawn-fcgi вместо init-скрипта 
  - spawn-fcgi.service - сам сервис > /etc/systemd/system/
  - spawn-fcgi - файл конфигурации > /etc/sysconfig/
